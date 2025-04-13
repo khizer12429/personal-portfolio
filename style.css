@@ -1,0 +1,624 @@
+@font-face {
+  font-family: 'Agustina Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Agustina Regular'), url('Agustina.woff') format('woff');
+}
+
+@font-face {
+  font-family: myfont;
+  src: url(./agustina/Agustina.otf);
+}
+@font-face {
+  font-family: font;
+  src: url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+}
+ body .kanit-regular {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-family: font;
+  overflow-x: hidden;
+}
+
+.main{
+  margin: 0 30px;
+}
+
+body.light-mode{
+  background-color: #ffffff;
+  color: #000;
+}
+
+body.dark-mode {
+  background-color: #171c28;
+  color: white;
+}
+body.dark-mode .header {
+  background-color: #171c28;
+  color: white;
+}
+
+.header .left a {
+  font-family: myfont;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.toggle-switch input[type="checkbox"] {
+  display: none;
+}
+
+.toggle-switch-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 2px #ccc;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.toggle-switch-handle {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Move handle when checked */
+input[type="checkbox"]:checked+.toggle-switch-background .toggle-switch-handle {
+  transform: translateX(20px);
+}
+
+/* Background color change when checked */
+input[type="checkbox"]:checked+.toggle-switch-background {
+  background-color: #1DB8B8;
+}
+
+/* Theme Styles */
+body.light-mode .project .box1 {
+  box-shadow: rgba(99, 98, 98, 0.993) 0px 5px 15px;
+  transition: all 0.3s;
+}
+
+body.light-mode .project .box1:hover {
+  box-shadow: rgba(0, 0, 0, 0.993) 0px 5px 15px;
+}
+
+body.light-mode .project .box2 {
+  box-shadow: rgba(99, 98, 98, 0.993) 0px 5px 15px;
+  transition: all 0.3s;
+}
+
+body.light-mode .project .box2:hover {
+  box-shadow: rgba(0, 0, 0, 0.993) 0px 5px 15px;
+}
+
+
+/* body.dark-mode h1,
+body.dark-mode p {
+  color: #fff;
+} */
+
+.icons img {
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.icons img:hover {
+  transform: scale(1.2) translateY(-8px);
+}
+
+.button {
+  background-color: #1DB8B8;
+  transition: ease 0.3s all;
+}
+
+.button:hover {
+  color: #1DB8B8;
+  background-color: rgb(255, 255, 255);
+  transform: scale(1.2) translateY(-5px);
+}
+
+
+.seconed .right #lottie-containers {
+  height: 500px;
+  width: 500px;
+}
+.third{
+  gap: 150px;
+  
+}
+
+.third .left #lottie-containerss {
+  height: 100%;
+  width: 100%;
+}
+/* .fourth .left #lottie-containersss {
+  
+  
+}  */
+.icon{
+  width: 500px;
+}
+.icon img {
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.icon img:hover {
+  transform: scale(1.2) translateY(-8px);
+  background-color: #161516;
+  border-radius: 10px;
+}
+.fourth{
+  display: flex;
+}
+.fourth .left{
+  width: 100%;
+}
+.fourth .bar {
+  background-color: white;
+  position: relative;
+  height: 20px;
+  width: 85%;
+  border-radius: 20px;
+}
+
+.fourth .bar .clr {
+  height: 20px;
+  position: absolute;
+  width: 85%;
+  background-color: #1DB8B8;
+  border-radius: 20px;
+}
+
+.fourth .bars {
+  background-color: white;
+  position: relative;
+  height: 20px;
+  width: 85%;
+  border-radius: 20px;
+}
+
+.fourth .bars .clrs {
+  height: 20px;
+  position: absolute;
+  width: 80%;
+  background-color: #1DB8B8;
+  border-radius: 20px;
+}
+
+.fourth .barss {
+  background-color: white;
+  position: relative;
+  height: 20px;
+  width: 85%;
+  border-radius: 20px;
+}
+
+.fourth .barss .clrss {
+  height: 20px;
+  position: absolute;
+  width: 90%;
+  background-color: #1DB8B8;
+  border-radius: 20px;
+}
+
+.fourth .barsss {
+  background-color: white;
+  position: relative;
+  height: 20px;
+  width: 85%;
+  border-radius: 20px;
+}
+
+.fourth .barsss .clrsss {
+  height: 20px;
+  position: absolute;
+  width: 60%;
+  background-color: #1DB8B8;
+  border-radius: 20px;
+}
+
+.fourth .barssss {
+  background-color: white;
+  position: relative;
+  height: 20px;
+  width: 85%;
+  border-radius: 20px;
+}
+
+.fourth .barssss .clrssss {
+  height: 20px;
+  position: absolute;
+  width: 50%;
+  background-color: #1DB8B8;
+  border-radius: 20px;
+}
+
+
+.fifth .image {
+  width: 200px;
+}
+
+.fifth .image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.bor {
+  width: 80%;
+}
+
+.project .box1 {
+  padding: 30px 50px;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(250, 250, 250, 0.35) 0px 5px 15px;
+  justify-content: flex-start;
+  width: 100%;
+  border: none;
+}
+
+.project .box1:hover {
+  box-shadow: rgba(255, 249, 249, 0.993) 0px 5px 15px;
+}
+
+.project .box2:hover {
+  box-shadow: rgba(255, 249, 249, 0.993) 0px 5px 15px;
+}
+
+.project .box1 .image {
+  width: 150px;
+}
+
+.project .box1 img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.project .box2 .image {
+  width: 150px;
+}
+
+.project .box2 img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.project .box2 {
+  padding: 30px 50px;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+  justify-content: flex-start;
+  width: 100%;
+  border: none;
+}
+
+#topBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #1DB8B8;
+  color: white;
+  cursor: pointer;
+  padding: 12px 18px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease-in-out;
+}
+
+#topBtn:hover {
+  background-color: #333;
+}
+
+/* Preloader full screen */
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #171C28;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  top: 0;
+}
+
+/* The spinner */
+#lottie-containersx {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #3498db;
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  animation: spin 1s linear infinite;
+}
+
+/* Animation for spinner */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 767px) {
+  #navMenu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: -300px; /* Start hidden above */
+      background-color: #171c2854;
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+      pointer-events: none;
+      padding: 0;
+      margin: 0;
+  }
+  
+  #navMenu.active {
+      top: 80px; /* Slide down to this position */
+      opacity: 1;
+      pointer-events: auto;
+      padding: 20px 0;
+  }
+  
+  #navMenu li {
+      padding: 10px 20px;
+      transition: background-color 0.2s ease;
+  }
+  
+  #mobileMenuButton svg{
+    position: relative;
+    z-index: 10;
+  }
+}
+  
+  #navMenu.active li {
+      padding: 10px 20px;
+  }
+
+@media (max-width: 1350px) {
+
+  .seconed .left .text h1 {
+    font-size: 40px;
+    width: 230px;
+  }
+
+  .seconed .left .animation .hi {
+    height: 80px;
+    width: 80px;
+  }
+  .seconed .left{
+    padding: 10px 0;
+  }
+  .seconed .left h2 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .fourth .right #lottie-containersss {
+    display: none;
+  }
+  .fourth .bar {
+    width: 100%;
+  }
+  .fourth .bars {
+    width: 100%;
+  }
+  .fourth .barss {
+    width: 100%;
+  }
+  .fourth .barsss {
+    width: 100%;
+  }
+  .fourth .barssss {
+    width: 100%;
+  }
+  .last .flex .left {
+    font-size: 45px;
+    text-align: center;
+  }
+  .last .left h2{
+    font-size: 25px;
+  }
+  .last .left h3{
+    font-size: 25px;
+  }
+  .last .left h4{
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .seconed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .seconed .left{
+    width: 100%;
+  }
+  .seconed .left .animation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .seconed .left .text h1 {
+    font-size: 40px;
+  }
+  .main{
+    margin: 0;
+  }
+  .seconed .left h2 {
+    font-size: 27px;
+    text-align: center;
+    width: 100%;
+  }
+  .seconed .one{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .seconed .right #lottie-containers {
+    height: 400px;
+    width: 400px;
+  }
+  .third{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .third .right {
+    gap: 0 0;
+  }
+  .third .right .icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .third .right h1{
+    text-align: center;
+  }
+  .third .right p{
+    text-align: center;
+  }
+  .third .left #lottie-containerss{
+    
+      margin: 0 0;
+  }
+  .fifth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fifth .flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .project .box2 h1{
+    margin-top: 10px;
+  }
+  .project .box2 h2{
+    margin-top: 10px;
+  }
+  .last{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .last .left .icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .last .left .flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .seconed .left .text h1 {
+    font-size: 35px;
+  }
+  .seconed .left h2 {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  .fifth .text{
+    font-size: 50px;
+  } 
+  .fifth .flex .texts h1{
+    font-size: 20px;
+  } 
+  .last .left h2{
+    font-size: 20px;
+  }
+  .last .left h3{
+    font-size: 20px;
+  }
+  .last .left h4{
+    font-size: 20px;
+  }
+  .fifth .flex .image{
+    width: 150px;
+  }
+  .last .left .flex h1{
+    font-size: 50px;
+  }
+  .seconed .right #lottie-containers{
+    width: 100%;
+    height: 300px;
+  }
+  .third .right p{
+    font-size: 22px;
+  }
+  .third .right h1{
+    font-size: 22px;
+  }
+  .right #lottie-containerssss{
+    height: 200px;
+    
+  }
+}
+@media (max-width: 470px) {
+  
+  .fourth .left .aaa{
+    font-size: 40px;
+  }
+  
+}
+
+
+
